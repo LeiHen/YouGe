@@ -1,1 +1,46 @@
 @charset "utf-8";
+
+/* index banner */
+.banner{
+	min-width: 1200px;
+	height: 600px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.banner .wrap{
+	width: 100%;
+	position: relative;
+}
+.banner .wrap .list{
+	
+}
+.banner .wrap .list .img{
+	
+}
+.banner .wrap .list .content{
+	
+}
+.banner .wrap .list .content .title{
+	
+}
+.banner .wrap .list .content .sub_title{
+	
+}
+.banner .wrap .list .content .lump{
+	
+}
+
+
+.banner .btn_nav{
+	position: absolute;	
+}
+.banner .btn_nav .btn{
+	
+}
+.banner .btn_nav .btn_l{
+	
+}
+.banner .btn_nav .btn_r{
+	
+}

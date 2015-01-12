@@ -5,6 +5,206 @@ body{
 	font-family:Helvetica,Arial,"Microsoft YaHei","微软雅黑",STXihei,"华文细黑",SimSun,"宋体",sans-serif;
 	font-size:62.5%;
 }
+a:link,a:visited,a:hover,a:active{
+	
+	/*color: #616169;
+	*/
+	text-decoration: none;
+}
+a:link{
+	color: #fff;
+}
+
+.w{
+	width: 1140px;
+	margin:0px auto;
+	padding: 0 30px;
+}
+
+.w_min{
+	min-width: 1140px;
+	margin:0px auto;
+	padding: 0 30px;
+}
+.w_max{
+	max-width: 1340px;
+	margin:0px auto;
+	padding: 0 30px;
+}
+
+/*  */
+.header{
+	height: 100px;
+	border-bottom: 1px solid #dee2e6;
+	overflow: hidden;
+}
+
+.header .logo{
+	display: block;
+	overflow: hidden;
+	/*height: 100px;
+	*/
+}
+.header .logo .icon,
+.header .logo .name,
+.header .logo .name_en{
+	display: block;
+	float: left;
+	margin: 0 20px 0 0;
+}
+.header .logo .icon{
+	font-size: 8em;
+	height: 100px;
+	line-height: 100px;
+	color: #0065b3;
+}
+.header .logo .name{
+	margin: 35px 20px 35px 0;
+	font-size: 3em;
+	padding: 0 20px 0 0;
+	line-height: 1em;
+	border-right:1px solid #dee2e6;
+}
+.header .logo .name_en{
+	font-size: 2em;
+	line-height: 100px;
+	color: #dee2e6;
+	text-transform: uppercase;
+}
+
+.header .logo:hover .icon{
+	color: #1a466c;
+	-webkit-transform:translate(20px,0);
+	-moz-transform:translate(20px,0);
+	-ms-transform:translate(20px,0);
+	-o-transform:translate(20px,0);
+	transform:translate(20px,0);
+}
+
+.header .slogan{
+	line-height: 100px;
+	font-size: 2.4em;
+	color: #0065b3;
+}
+
+
+
+/* footer */
+.footer{
+
+}
+.footer .copy{
+	background: #0065b3;
+	height: 60px;
+	margin: 0 0 60px 0;
+}
+.footer .copy .wrap{
+	height: 60px;
+	position: relative;
+}
+.footer .copy .copy_txt,
+.footer .copy .address{
+	width: 50%;
+	color: #fff;
+	font-size: 1.4em;
+	line-height: 60px;
+	height: 60px;
+}
+.footer .copy .copy_txt{
+	float: left;
+}
+.footer .copy .address{
+	float: right;
+	text-align: right;
+}
+.footer .copy .logo{
+	display: block;
+	height: 140px;
+	width:200px;
+	background: rgba(255,255,255,.8);
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#ccffffff', endColorstr='#ccffffff');
+	color: #0065b3;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border: 1px solid #dee2e6;
+}
+:root .footer .copy .logo{
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#00ffffff', endColorstr='#00ffffff');
+}
+.footer .copy .logo .icon{
+	display: block;
+	color: #0065b3;
+	font-size: 12em;
+	line-height: 140px;
+	text-align: center;
+}
+
+.footer .copy .logo:hover{
+
+}
+.footer .copy .logo:hover .icon{
+	color: #1a466c;
+	-webkit-transform:translate(10px,0);
+	-moz-transform:translate(10px,0);
+	-ms-transform:translate(10px,0);
+	-o-transform:translate(10px,0);
+	transform:translate(10px,0);
+}
+
+/* nav */
+.nav{ border-bottom: 14px solid #0065b3; }
+.nav .ul{ }
+.nav .ul .list{ display: inline-block; +display: inline; +zoom: 1; }
+.nav .ul .list .link{ width: 150px; color: #616169; line-height: 1em; font-size: 1.8em; margin: 22px auto; display: block; position: relative; text-align: center; border-left:1px solid #dee2e6; }
+.nav .ul .list .link:first-child{ border-left:none; }
+.nav .ul .list .link .en{ display: block; position: absolute; left: 0; right: 0; bottom:-30px; font-size: 0.63em; opacity: 0; filter:alpha(opacity=0); }
+.nav .ul .list:hover,
+.nav .ul .hover{ }
+.nav .ul .list:hover .link,
+.nav .ul .hover .link{ color: #0065b3; }
+.nav .ul .list:hover .link .en,
+.nav .ul .hover .link .en{ bottom: -20px; opacity: 1; filter:alpha(opacity=100); -webkit-transition:opacity .4s ease-out,bottom .4s ease-out; -moz-transition:opacity .4s ease-out,bottom .4s ease-out; -ms-transition:opacity .4s ease-out,bottom .4s ease-out; -o-transition:opacity .4s ease-out,bottom .4s ease-out; transition:opacity .4s ease-out,bottom .4s ease-out; }
+
+/* 站点地图 */
+.nav_site{ border-bottom:none; }
+.nav_site .ul{ text-align: center; overflow: hidden; }
+.nav_site .ul .list{ display: inline-block; +display: inline; +zoom: 1; overflow: hidden; }
+.nav_site .ul .list .link{ display: block; margin: 20px auto; font-size: 1.4em;font-size: 1.4em; line-height: 1em; color: #616169; margin: 10px 20px; padding: 4px 0px; border-bottom:1px solid transparent; }
+.nav_site .ul .list .link .en{ display: none; }
+.nav_site .ul .list:hover .link{ color: #0065b3; border-bottom:1px solid #0065b3; }
+
+/* 模块 */
+
+/* 按钮 */
+.mod_btn{ background: #0065b3; display: inline-block; +display: inline; +zoom: 1; text-align: center; color: #fff; padding: 12px 24px; border-radius: 4px; box-shadow:0px 2px 0px 0px  #1a466c; }
+.mod_btn .mod_btn_title{ font-size: 1.4em; line-height: 1em; }
+.mod_btn .mod_btn_ico{ display: inline-block; line-height: 1em; color: #fff; }
+.mod_btn:hover{ box-shadow:0px 2px 0px 0px transparent; -webkit-transform:translate(0,2px); -ms-transform:translate(0,2px); -moz-transform:translate(0,2px); -o-transform:translate(0,2px); transform: translate(0,2px); }
+.mod_btn:active{ box-shadow: 0px -2px 0px 0px #1e507c; -moz-transform:translate(0,4px); -moz-transform:translate(0,4px); -moz-transform:translate(0,4px); -moz-transform:translate(0,4px); transform: translate(0,4px); }
+.mod_btn:active .mod_btn_ico{ transform: translate(4px,0); -webkit-transform: translate(4px,0); -moz-transform: translate(4px,0); -ms-transform: translate(4px,0); -o-transform: translate(4px,0); }
+
+
+/* css3 动画 */
+.header .logo,
+.header .logo .icon,
+.nav .ul .list .link,
+.mod_btn,
+.mod_btn .mod_btn_title,
+.mod_btn .mod_btn_ico,
+.nav_site .ul .list .link,
+.footer .copy .logo,
+.footer .copy .logo .icon{
+	-webkit-transition:all .4s ease-out;
+	-moz-transition:all .4s ease-out;
+	-ms-transition:all .4s ease-out;
+	-o-transition:all .4s ease-out;
+	transition:all .4s ease-out;
+}
+
 
 
 
@@ -12,22 +212,29 @@ body{
 
 	全局
 	
-	  	  主色
+	  	  主色 0065b3
 	 	  辅色 
-    	背景色
-    	点睛色
+    	背景色 fff
+    	点睛色 
+
+    	  灰色 dee2e6
+    	  灰色 616169
+
+    	暗深蓝 1a466c
+    	深蓝色
+    	  蓝色 0065b3
 
 	  字体颜色 
 
 	主标题颜色 
 	副标题颜色 
-	  正文颜色 
+	  正文颜色 616169
 	
 	  过渡颜色
 
-	主标题大小 
-	副标题大小 
-	  正文大小 14px
+	主标题大小 30 px
+	副标题大小 24 px
+	  正文大小 14 px
 
 	主标题行高 
 	副标题行高 
