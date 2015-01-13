@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 /* index banner */
 .banner{
 	min-width: 1200px;
@@ -33,7 +34,7 @@
 
 
 .banner .btn_nav{
-	position: absolute;	
+	position: absolute;
 }
 .banner .btn_nav .btn{
 	
@@ -44,3 +45,132 @@
 .banner .btn_nav .btn_r{
 	
 }
+
+
+/* index 咨询 */
+.consult{
+	border: 2px solid #dee2e6;
+}
+.consult .wrap{
+	border: 2px solid #dee2e6;
+}
+.consult .wrap_1x1h{
+	/*width: */
+}
+
+
+/* banner sub */
+.banner_sub{ overflow: hidden; position: relative; height: 220px; }
+.banner_sub .wrap{ position: absolute; left: 50%; }
+.banner_sub .wrap .img{ display: block; margin-left: -50%; }
+
+
+
+
+
+/* 团队 */
+.team{
+	margin: 60px auto;
+	/*padding: 60px auto;*/
+}
+.team .sub_content{
+	overflow: hidden;
+	padding: 40px 0;
+}
+.team .sub_content .list{
+	width: 22.807017%;
+	margin-left: 2.8947368%;
+	margin-bottom:40px; 
+	float: left;
+}
+.team .sub_content .list:nth-child(4n+1){
+	margin-left:0%;
+}
+.team .sub_content .list .wire{
+	position: relative;
+	border: 2px solid #dee2e6;
+}
+
+.team .sub_content .list .img_wrap{
+	overflow: hidden;
+}
+/*.team .sub_content .list .img_wrap{
+	overflow: hidden;
+}*/
+.team .sub_content .list .img_wrap .img{
+	width: 100%;
+}
+
+.team .sub_content .list .name{
+	
+}
+.team .sub_content .list .speciality{
+	
+}
+.team .sub_content .list .speciality .txt{
+	
+}
+.team .sub_content .list .speciality .mod_btn{
+	
+}
+
+.team .sub_content .list:hover .img_wrap .img{
+	/*transform:scler;*/
+}
+
+
+
+
+/* css3 动画 */
+.flink .wrap .ul .list .link .img,
+.flink .wrap .btn_wrap .btn_l,
+.flink .wrap .btn_wrap .btn_r,
+.flink .wrap .btn_wrap .mod_btn_circle,
+.flink .wrap .btn_wrap .mod_btn_circle .icon{
+	-webkit-transition:all .4s ease-out;
+	-moz-transition:all .4s ease-out;
+	-ms-transition:all .4s ease-out;
+	-o-transition:all .4s ease-out;
+	transition:all .4s ease-out;
+}
+
+
+
+
+/*
+
+	全局
+	
+	  	  主色 0065b3
+	 	  辅色 
+    	背景色 fff
+    	点睛色 
+
+    	  浅灰 dee2e6
+    	  灰色 616169
+
+
+    	暗深蓝 1a466c
+    	深蓝色
+    	  蓝色 0065b3
+
+	  字体颜色 
+
+	主标题颜色 fff
+	副标题颜色 
+	  正文颜色 616169
+	
+	  过渡颜色
+
+	主标题大小 30 px
+	副标题大小 24 px
+	  正文大小 14 px
+
+	主标题行高 
+	副标题行高 
+	  正文行高 
+
+		  边距
+		内填充
+
+*/
