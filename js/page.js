@@ -10,7 +10,8 @@
 * @dependent:总初始化
 */
 function mianInit(){
-	
+	//友情链接
+	slideImgs('fLink',5000);
 }
 mianInit();
 /* @end **/

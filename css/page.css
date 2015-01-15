@@ -12,38 +12,100 @@
 .banner .wrap{
 	width: 100%;
 	position: relative;
+	overflow:hidden;
 }
-.banner .wrap .list{
-	
+.banner .ul{
+	width: 100%;
+	height: 600px;
+	position: relative;
 }
-.banner .wrap .list .img{
-	
+.banner .ul .list{
+	height: 600px;
+	width: 100%;
+	float: left;
+	position: relative;
+	overflow: hidden;
 }
-.banner .wrap .list .content{
-	
+.banner .ul .list .img_warp{
+	left:50%;
+	position: absolute;
 }
-.banner .wrap .list .content .title{
-	
+.banner .ul .list .img_warp .img{
+	display: block;
+	left: -50%;
+	position: relative;
 }
-.banner .wrap .list .content .sub_title{
-	
+
+.banner .ul .list .content{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
-.banner .wrap .list .content .lump{
+.banner .ul .list .content .sub_title{
+	font-size: 2.4em;
+	line-height: 1em;
+	color: #1a466c;
+	position: absolute;
+	top: 120px;
+}
+.banner .ul .list .content .title{
+	position: absolute;
+	top: 180px;
+	font-size: 3.4em;
+	line-height: 1em;
+	color: #0065b3;
+}
+.banner .ul .list .content .title .big{
+	font-size: 1.6em;
+	margin: 0 20px;
+}
+
+.banner .ul .list .content .lump{
+	display: inline-block;
+	background: rgba(0,0,0,.6);
+}
+
+.banner .ul .list .content .lump_ul{
+	display: inline-block;
+}
+.banner .ul .list .content .lump_ul .lump_link{
+	background: url(../images/icon_hospital.png) no-repeat center center;
+	padding: 20px 20px 20px 30px;
+	display: block;
+	color: #fff;
+	font-size: 1.4em;
+	line-height: 1em;
+}
+.banner .ul .list .content .lump{
 	
 }
 
+
+
+.banner .ul .list .content .more{
+	position: absolute;
+	left: 500px;
+	top: 280px;
+}
 
 .banner .btn_nav{
 	position: absolute;
+	top: 0;
+	bottom: 0;
+	top: 50%;
+	margin: auto;
+	width: 100%;
 }
 .banner .btn_nav .btn{
-	
+	position: absolute;
+	top: -20px;
 }
 .banner .btn_nav .btn_l{
-	
+	left: 10%;
 }
 .banner .btn_nav .btn_r{
-	
+	right: 10%;
 }
 
 

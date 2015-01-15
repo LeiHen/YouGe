@@ -128,6 +128,152 @@ function createIcon(json){
 /* @end **/
 
 
+/**
+* @name     :slideImgs
+* @author   :Nice
+* @version  :
+* @type     :基类
+* @explain  :ID为元素id
+* @relating :
+* @dependent:
+*/
+function slideImgs(ID,time){
+    var e=$('#'+ID);
+    var imgS=e.find('.ul');
+    var imgSWFormer=imgS.width();
+    var listS=imgS.find('.list');
+    var listSL=listS.length;
+    var btn=e.find('.btn_nav');
+    var btnL=btn.find('.btn_l');
+    var btnR=btn.find('.btn_r');
+
+    var imgSW=listS.outerWidth(true)*listSL;
+
+    var maxI=parseInt(imgSW/imgSWFormer);
+
+    GLOBAL.namespace('SLIDEIMGS.INDEX');
+    var i=GLOBAL.SLIDEIMGS.INDEX.ID=0;
+
+    // console.log(imgSWFormer);
+
+
+    function slide(direction){
+        if (direction=='r') {
+            var i=GLOBAL.SLIDEIMGS.INDEX.ID=GLOBAL.SLIDEIMGS.INDEX.ID+1;
+            if(i>=maxI+1){
+                i=GLOBAL.SLIDEIMGS.INDEX.ID=0;
+            }
+
+        };
+        if (direction=='l') {
+            var i=GLOBAL.SLIDEIMGS.INDEX.ID=GLOBAL.SLIDEIMGS.INDEX.ID-1;
+            if (GLOBAL.SLIDEIMGS.INDEX.ID<0) {
+                i=GLOBAL.SLIDEIMGS.INDEX.ID=maxI;
+            };
+        };
+        if (direction=='circular') {
+            i=GLOBAL.SLIDEIMGS.INDEX.ID=GLOBAL.SLIDEIMGS.INDEX.ID+1;
+            if(i>=maxI+1){
+                i=GLOBAL.SLIDEIMGS.INDEX.ID=0;
+            }
+        };
+
+        imgS.stop().animate({
+            left:-i*100+'%'
+        }, 800)
+    }
+
+    setInterval(function(){slide('circular')},time);
+
+    btnL.click(function() {
+        slide('l');
+    });
+
+    btnR.click(function() {
+        slide('r');
+    });
+}
+/* @end **/
+
+
+
+/**
+* @name     :slideBanner
+* @author   :Nice
+* @version  :
+* @type     :基类
+* @explain  :ID为元素id  time为时间
+* @relating :
+* @dependent:
+*/
+function slideBanner(ID,time){
+    var e=$('#'+ID);
+    var imgS=e.find('.ul');
+    // var imgSWFormer=imgS.width();
+    var listS=imgS.find('.list');
+    var listSL=listS.length;
+    var btn=e.find('.btn_nav');
+    var btnL=btn.find('.btn_l');
+    var btnR=btn.find('.btn_r');
+
+    
+    imgS.css('width', listSL*100+'%');
+    var lW=100/listSL;
+    listS.css('width', lW+'%');
+    console.log(lW);
+
+    // var imgSW=listS.outerWidth(true)*listSL;
+
+    // var maxI=parseInt(imgSW/imgSWFormer);
+
+    GLOBAL.namespace('SLIDEIMGS.INDEX');
+    var i=GLOBAL.SLIDEIMGS.INDEX.banner=0;
+
+    // console.log(imgSWFormer);
+
+
+    function slide(direction){
+        if (direction=='r') {
+            var i=GLOBAL.SLIDEIMGS.INDEX.ID=GLOBAL.SLIDEIMGS.INDEX.ID+1;
+            if(i>=listSL+1){
+                i=GLOBAL.SLIDEIMGS.INDEX.ID=0;
+            }
+        };
+        if (direction=='l') {
+            var i=GLOBAL.SLIDEIMGS.INDEX.ID=GLOBAL.SLIDEIMGS.INDEX.ID-1;
+            if (GLOBAL.SLIDEIMGS.INDEX.ID<0) {
+                i=GLOBAL.SLIDEIMGS.INDEX.ID=listSL;
+            };
+        };
+        if (direction=='circular') {
+            i=GLOBAL.SLIDEIMGS.INDEX.banner=GLOBAL.SLIDEIMGS.INDEX.banner+1;
+            if(i>=listSL){
+                i=GLOBAL.SLIDEIMGS.INDEX.banner=0;
+            }
+        };
+        imgS.stop().animate({
+            left:-i*100+'%'
+        }, 800)
+    }
+
+    setInterval(function(){slide('circular')},time);
+
+    // btnL.click(function() {
+    //     slide('l');
+    // });
+
+    // btnR.click(function() {
+    //     slide('r');
+    // });
+}
+
+
+
+
+
+
+
+
 
 
 
