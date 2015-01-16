@@ -242,7 +242,7 @@ function slideBanner(ID,time){
         if (direction=='l') {
             var i=GLOBAL.SLIDEIMGS.INDEX.ID=GLOBAL.SLIDEIMGS.INDEX.ID-1;
             if (GLOBAL.SLIDEIMGS.INDEX.ID<0) {
-                i=GLOBAL.SLIDEIMGS.INDEX.ID=listSL;
+                i=GLOBAL.SLIDEIMGS.INDEX.ID=listSL-1;
             };
         };
         if (direction=='circular') {
@@ -258,13 +258,13 @@ function slideBanner(ID,time){
 
     setInterval(function(){slide('circular')},time);
 
-    // btnL.click(function() {
-    //     slide('l');
-    // });
+    btnL.click(function() {
+        slide('l');
+    });
 
-    // btnR.click(function() {
-    //     slide('r');
-    // });
+    btnR.click(function() {
+        slide('r');
+    });
 }
 
 

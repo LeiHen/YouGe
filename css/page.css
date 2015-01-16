@@ -29,11 +29,13 @@
 .banner .ul .list .img_warp{
 	left:50%;
 	position: absolute;
+	/*z-index: -2;*/
 }
 .banner .ul .list .img_warp .img{
 	display: block;
 	left: -50%;
 	position: relative;
+
 }
 
 .banner .ul .list .content{
@@ -62,31 +64,46 @@
 }
 
 .banner .ul .list .content .lump{
-	display: inline-block;
-	background: rgba(0,0,0,.6);
+	position: absolute;
+	top: 250px;
+	left: 30px;
+	width: auto;
 }
 
 .banner .ul .list .content .lump_ul{
+	background: rgba(0,0,0,.6);
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#9C000000', endColorstr='#9C000000');
+}
+:root .banner .ul .list .content .lump_ul{
+	background: rgba(0,0,0,.6);
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#00000000', endColorstr='#0000000');
+}
+.banner .ul .list .content .lump_ul .lump_li{
 	display: inline-block;
+	+display: inline;
+	+zoom: 1;
 }
 .banner .ul .list .content .lump_ul .lump_link{
-	background: url(../images/icon_hospital.png) no-repeat center center;
-	padding: 20px 20px 20px 30px;
+	background: url(../images/icon_hospital.png) no-repeat;
+	background-position: 10px center;
+	padding: 20px 20px 20px 50px;
 	display: block;
 	color: #fff;
 	font-size: 1.4em;
 	line-height: 1em;
 }
-.banner .ul .list .content .lump{
-	
+.banner .ul .list .content .lump_ul .lump_li:hover{
+	background: rgba(0,0,0,.8);
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#cc000000', endColorstr='#cc000000');
+}
+:root .banner .ul .list .content .lump_ul .lump_li:hover{
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#00000000', endColorstr='#00000000');
 }
 
-
-
 .banner .ul .list .content .more{
-	position: absolute;
-	left: 500px;
-	top: 280px;
+	position: relative;
+	left:486px;
+	top: 20px;
 }
 
 .banner .btn_nav{
@@ -110,14 +127,26 @@
 
 
 /* index 咨询 */
-.consult{
-	border: 2px solid #dee2e6;
+.consult_index{ border: 2px solid #dee2e6; overflow: hidden; margin: 60px 0; }
+.consult_index .wrap{ height: 280px; float: left; }
+.consult_index .wrap_1x1h{ width: 25%; }
+.consult_index .wrap_2x1h{ width: 50%; }
+.consult_index .wrap .frame{ border: 2px solid #dee2e6; display: block; height: 276px;  overflow: hidden; position: relative; padding: 0 40px; }
+.consult_index .wrap .frame .img{ position: absolute; left: 0; top: 0; bottom: 0; right: 0; margin: auto; width: 100%; z-index: -1; display:block; }
+.consult_index .wrap .frame .title{ font-size: 2.4em; line-height: 1.8em; margin: 40px 0 0 0; color: #000; }
+.consult_index .wrap .frame .title_en{ font-size: 1.4em; line-height: 1.4em; color: #616169; max-width:200px; }
+.consult_index .wrap .frame .more{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
 }
-.consult .wrap{
-	border: 2px solid #dee2e6;
-}
-.consult .wrap_1x1h{
-	/*width: */
+
+.consult_index .wrap:hover .frame .img{
+	-wenkit-transform:scale(1.04);
+	-moz-transform:scale(1.04);
+	-ms-transform:scale(1.04);
+	-o-transform:scale(1.04);
+	transform:scale(1.04);
 }
 
 
@@ -296,7 +325,8 @@
 .flink .wrap .btn_nav .mod_btn_circle,
 .flink .wrap .btn_nav .mod_btn_circle .icon,
 .team .sub_content .list .img_wrap .img,
-.contact .contact_info .list .icon{
+.contact .contact_info .list .icon,
+.consult_index .wrap .frame .img{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
