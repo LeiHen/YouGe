@@ -236,6 +236,12 @@
 .team_detail .img_wrap{ position: absolute; top: 0; right: 0; width: 350px; height: 566px; }
 .team_detail .img_wrap .img{ display: block; width: 350px; height: 566px; }
 
+/* 医疗服务 */
+.medical{
+	
+}
+
+
 /* 伤口护理 */
 .nurse{
 	margin: 60px auto;
